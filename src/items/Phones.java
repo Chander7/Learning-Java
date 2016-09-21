@@ -13,13 +13,11 @@ Boolean network3g;
 Boolean network4g;
 
 //Phonecompany
-
 public String getPhoneCompany () {
   return this.phoneCompany;
 }
 
 public void setPhoneCompany (String pc) {
-  
   Switch (pc) {
     case "Samsung":
       pca = "This is a Samsung Phone";
@@ -36,9 +34,12 @@ public void setPhoneCompany (String pc) {
     default:
       Throw new IllegalArgumentException ("This is an invalid entry" + pc);
   }
-
-
+return pca;
 }
+
+
+
+
 
 //phoneName
 public String getPhoneName () {
