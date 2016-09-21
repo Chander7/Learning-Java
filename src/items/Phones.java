@@ -19,7 +19,25 @@ public String getPhoneCompany () {
 }
 
 public void setPhoneCompany (String pc) {
-  String [] a = {"Samsung", "Apple", "Microsoft", "Huawei"};
+  
+  Switch (pc) {
+    case "Samsung":
+      pca = "This is a Samsung Phone";
+      break;
+    case "Apple":
+      pca = "This is an Apple Phone";
+      break;
+    case "Microsoft":
+      pca = "This is a Microsoft Phone";
+      break;
+    case "Huawei":
+      pca = "This is a Huawei Phone";
+      break;
+    default:
+      Throw new IllegalArgumentException ("This is an invalid entry" + pc);
+  }
+
+
 }
 
 //phoneName
