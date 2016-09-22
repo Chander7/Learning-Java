@@ -51,4 +51,14 @@ public void setPhoneName (String pn) {
 }
 
 
+//phoneModel
+public String getPhoneModel () {
+  return this.phoneModel;
+}
+
+public void setPhoneModel (String pm) {
+  this.phoneModel = pm;
+}
+
+
 }
